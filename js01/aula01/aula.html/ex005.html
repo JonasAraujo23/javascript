@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+          background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <Strong>DOM</Strong> em JavaScript</p>
+    <div id="img">Clique Aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("Está Escrito assim :"+p1.innerText)
+        corpo.style.background = 'coral';
+        window.alert(p1.innerHTML)
+        var d = window.document.getElementById('img')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+    </script>
+</html>
